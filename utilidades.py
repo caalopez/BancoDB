@@ -617,7 +617,7 @@ def explorar_datos(df):
     - 🩸 ** Tipo de donacion**: Sangre total o Aferesis
     - 🩸 ** Grupo Sanguineo**: A - B - O - AB
     - 🩸 ** Antigeno RH-D**: Positivo o Negativo
-    - 🚩 ** Lugar de Donación**: Sede o Capaña
+    - 🚩 ** Lugar de Donación**: Sede o Campaña
     """)
 
     # Mostrar dimensión del DataFrame
