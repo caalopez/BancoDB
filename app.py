@@ -27,7 +27,7 @@ else:
 df = df.drop(columns=['Unnamed: 0'])
 
 st.markdown("<h1 style='text-align: center;'>📊Analisis de datos Banco de Sangre\n 🏥Clinica Cardio VID </h1>", unsafe_allow_html=True)
-st.set_page_config(page_title="Mi Aplicación", page_icon=🧩")
+st.set_page_config(page_title="BancoDBn", page_icon=:magnet:")
 
 
 def main():
