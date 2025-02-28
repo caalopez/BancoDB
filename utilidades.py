@@ -689,4 +689,4 @@ def analizar_edad():
     - Menor participación en edades avanzadas: Posiblemente por restricciones médicas o menor interés en la donación de sangre en personas mayores.  
     """
 
-    )
+    """)
