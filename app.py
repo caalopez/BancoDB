@@ -157,20 +157,6 @@ para las necesidades hospitalarias.
         predecir_donaciones(df)
         st.write("📊 **Modelo de Regresión Lineal**")
         
-        df["FECHA DONACION"] = pd.to_datetime(df["FECHA DONACION"])
-        donaciones_por_mes = df.resample("ME", on="FECHA DONACION").size().reset_index()
-        donaciones_por_mes.columns = ["ds", "y"]
-
-        # 🔹 Llamar a predecir_donaciones y obtener modelo, predicciones y figura
-        modelo, predicciones, fig = predecir_donaciones(df)
-
-        # 🔹 Calcular RMSE solo si `donaciones_por_mes` no está vacío
-        if not donaciones_por_mes.empty:
-            rmse = calcular_rmse(modelo, donaciones_por_mes)
-            st.write(f"📉 RMSE del modelo: {rmse:.2f}")
-        if not predicciones.empty:
-            st.plotly_chart(fig)
-        else:
-            st.warning("⚠️ No hay datos suficientes para generar una predicción.")
+        
 if __name__ == "__main__":
   main()
