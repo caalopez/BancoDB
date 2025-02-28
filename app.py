@@ -46,7 +46,7 @@ def main():
 
         # Verificar si la imagen existe antes de mostrarla
         if os.path.exists(image_path):
-            st.image(image_path, caption="Banco de Sangre de la Clínica CardioVid", use_container_width=True)
+            st.image(image_path, caption="Clínica CardioVid", use_container_width=True)
         else:
             st.error(f"⚠️ Imagen no encontrada en: {image_path}. Verifica la ruta.")
         
