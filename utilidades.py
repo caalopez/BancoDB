@@ -11,7 +11,6 @@ from PIL import Image
 import pdfplumber
 import plotly.express as px
 from prophet import Prophet
-from sklearn.metrics import mean_squared_error
 
 
 
@@ -566,6 +565,7 @@ def edad_por_tipo_donante(df):
     st.plotly_chart(fig)
 
 def predecir_donaciones(df):
+    def predecir_donaciones(df):
     # Convertir fechas
     df["FECHA DONACION"] = pd.to_datetime(df["FECHA DONACION"])
     
@@ -577,25 +577,27 @@ def predecir_donaciones(df):
     modelo = Prophet()
     modelo.fit(donaciones_por_mes)
     
-    # Generar fechas futuras para predicción
+    # Definir la fecha inicial para predicciones (enero 2025)
+    fecha_inicio_prediccion = pd.to_datetime("2025-01-01")
+    
+    # Calcular cuántos meses predecir desde la última fecha del dataset hasta 2027 (3 años de predicción)
+    ultima_fecha = donaciones_por_mes["ds"].max()
     meses_a_predecir = ((2027 - 2025) * 12) + 12  # Hasta diciembre de 2027
+    
+    # Generar fechas futuras a partir de enero 2025
     futuro = modelo.make_future_dataframe(periods=meses_a_predecir, freq="ME")
+    futuro = futuro[futuro["ds"] >= fecha_inicio_prediccion]  # Filtrar solo desde enero 2025
     
     # Hacer predicciones
     predicciones = modelo.predict(futuro)
     
-    # Calcular RMSE en datos históricos (comparando valores reales y predichos)
-    predicciones_historicas = predicciones.merge(donaciones_por_mes, on="ds", how="inner")
-    rmse = np.sqrt(mean_squared_error(predicciones_historicas["y"], predicciones_historicas["yhat"]))
-    
-    # Mostrar RMSE en Streamlit
-    st.write(f"**RMSE del modelo:** {rmse:.2f}")
-    
-    # Gráfica con Plotly
+    # Gráfica con Plotly en Streamlit
     fig = px.line(predicciones, x="ds", y="yhat", title="Predicción de Donaciones desde Enero 2025")
+    
+    # Mostrar la gráfica en Streamlit
     st.plotly_chart(fig)
     
-    return predicciones, rmse
+    return predicciones
 def explorar_datos(df):
     st.header("🔍 Exploración de Datos")
 
