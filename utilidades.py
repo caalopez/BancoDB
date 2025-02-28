@@ -14,7 +14,7 @@ from prophet import Prophet
 
 
 
-df = pd.read_csv("/Users/carlos/Desktop/bancoDB/Data/bancoDB_limpieza-2.csv")
+df = pd.read_csv("/Data/bancoDB_limpieza-2.csv")
 df = df.drop(columns=['Unnamed: 0'])
 
 # def generarMenu():
