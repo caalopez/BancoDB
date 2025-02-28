@@ -13,7 +13,8 @@ from prophet import Prophet
 from utilidades import *
 
 # Cargar datos
-df = pd.read_csv("/Users/carlos/Desktop/bancoDB/Data/bancoDB_limpieza_2.csv")
+#"/Users/carlos/Desktop/bancoDB/
+df = pd.read_csv("Data/bancoDB_limpieza_2.csv")
 df = df.drop(columns=['Unnamed: 0'])
 
 st.markdown("<h1 style='text-align: center;'>📊Analisis de datos Banco de Sangre\n 🏥Clinica Cardio VID </h1>", unsafe_allow_html=True)
