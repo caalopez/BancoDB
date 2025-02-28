@@ -11,10 +11,19 @@ import pdfplumber
 import plotly.express as px
 from prophet import Prophet
 from utilidades import *
+import os
 
 # Cargar datos
 #"/Users/carlos/Desktop/bancoDB/
-df = pd.read_csv("/workspaces/bancoDB/Data/bancoDB_limpieza-2.csv")
+
+ruta_csv = os.path.join("Data", "bancoDB_limpieza-2.csv")
+
+if os.path.exists(ruta_csv):
+    df = pd.read_csv(ruta_csv)
+else:
+    raise FileNotFoundError(f"El archivo {ruta_csv} no se encuentra. Verifica que esté en GitHub.")
+
+#df = pd.read_csv("/workspaces/bancoDB/Data/bancoDB_limpieza-2.csv")
 df = df.drop(columns=['Unnamed: 0'])
 
 st.markdown("<h1 style='text-align: center;'>📊Analisis de datos Banco de Sangre\n 🏥Clinica Cardio VID </h1>", unsafe_allow_html=True)
