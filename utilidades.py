@@ -671,8 +671,7 @@ def distribucion2_datos():
     """)
 
 def analizar_edad():
-    st.markdown(""""
-    **📊 Análisis:**
+    st.markdown("""
     **1. Forma de la Distribución**  
     - Distribución es asimétrica a la derecha, es decir, hay más donantes jóvenes y la frecuencia disminuye progresivamente con la edad.
     - Se observa un pico de frecuencia entre los 25 y 35 años, lo que indica que la mayoría de donantes se encuentran en este rango.
