@@ -639,16 +639,15 @@ def distribucion_datos():
     st.subheader("1️⃣ Tendencia de Donaciones en el Tiempo")
     st.markdown("""
     **📊 Análisis:**
-    - Se observa una variabilidad significativa en el número de donaciones a lo largo del tiempo.
+    - Se observa variabilidad significativa en el número de donaciones a lo largo del tiempo.
     - Existen picos de donaciones en algunos meses, seguidos de caídas notables.
     - Hay una reducción drástica en ciertos periodos, lo que podría estar relacionado con factores estacionales, campañas de donación o eventos de salud pública.
-    - Los datos parecen estar agrupados mensualmente, lo que sugiere que la variabilidad responde a patrones de comportamiento recurrentes.
-    - Desde principios de 2022 hasta 2024, la cantidad de donaciones no muestra una tendencia creciente o decreciente clara, sino más bien fluctuaciones periódicas.
+    - Sugiere que la variabilidad responde a patrones de comportamiento recurrentes.
+    - Desde principios de 2022 hasta 2024, la cantidad de donaciones no muestra tendencia creciente o decreciente, sino más bien fluctuaciones periódicas.
     
     **🔎 Posibles Causas:**
-    - Variaciones por estaciones del año (menos donaciones en invierno/verano debido a vacaciones o enfermedades).
     - Campañas de donación que impulsan aumentos en ciertos meses.
-    - Eventos específicos como emergencias sanitarias o desastres naturales que pueden alterar la tendencia.
+    - Eventos específicos como emergencias sanitarias pueden alterar la tendencia.
     """)
     
 def distribucion2_datos():
@@ -656,7 +655,6 @@ def distribucion2_datos():
     st.markdown("""
     **📊 Análisis:**
     - Este gráfico muestra la cantidad de donaciones por mes en un período determinado.
-    - Hay una clara diferencia entre algunos meses con mayor actividad y otros con menor cantidad de donaciones.
     - **Meses con más donaciones:** Parece haber picos en enero y agosto, con valores cercanos a 1,300 donaciones.
     - **Meses con menos donaciones:** Se observan valores más bajos en diciembre (aproximadamente 719 donaciones).
     - El gráfico de caja y bigotes en la parte superior indica una dispersión de los datos con posibles valores atípicos.
@@ -672,4 +670,23 @@ def distribucion2_datos():
     para incentivar la donación en meses de baja participación.
     """)
 
+def analizar_edad():
+    st.markdown(""""
+    **📊 Análisis:**
+    **1. Forma de la Distribución**  
+    - Distribución es asimétrica a la derecha, es decir, hay más donantes jóvenes y la frecuencia disminuye progresivamente con la edad.
+    - Se observa un pico de frecuencia entre los 25 y 35 años, lo que indica que la mayoría de donantes se encuentran en este rango.
+    - Disminución progresiva después de los 30 años: A medida que la edad aumenta, la frecuencia de donaciones se reduce gradualmente.  
 
+    **2. Medidas de Tendencia Central y Dispersión**  
+    - El rango intercuartílico (IQR) está entre 25 y 45 años, lo que sugiere que la mayoría de los donantes están en este intervalo.
+    - Media y mediana probablemente menores a 35 años, dado que la mayor parte de los valores están concentrados entre 18 y 35 años.  
+    - Amplio rango de edades: Se observan donaciones desde los 18 hasta los 60+ años.  
+    - Posibles valores atípicos: No hay evidencias claras de valores extremos, pero los datos en los extremos podrían analizarse con un boxplot.  
+
+    **3. Interpretación Contextual**  
+    - Mayor participación de jóvenes: Esto puede deberse a campañas de donación dirigidas a estudiantes universitarios o jóvenes trabajadores.  
+    - Menor participación en edades avanzadas: Posiblemente por restricciones médicas o menor interés en la donación de sangre en personas mayores.  
+    """
+
+    )
