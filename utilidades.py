@@ -635,6 +635,39 @@ def explorar_datos(df):
     - ⏳ **Edad de los donantes**: ¿Cuál es el rango más común?
     """)
 
-
+def distribucion_datos():
+    st.subheader("1️⃣ Tendencia de Donaciones en el Tiempo (Gráfico Superior)")
+    st.markdown("""
+    **📊 Análisis:**
+    - Se observa una variabilidad significativa en el número de donaciones a lo largo del tiempo.
+    - Existen picos de donaciones en algunos meses, seguidos de caídas notables.
+    - Hay una reducción drástica en ciertos periodos, lo que podría estar relacionado con factores estacionales, campañas de donación o eventos de salud pública.
+    - Los datos parecen estar agrupados mensualmente, lo que sugiere que la variabilidad responde a patrones de comportamiento recurrentes.
+    - Desde principios de 2022 hasta 2024, la cantidad de donaciones no muestra una tendencia creciente o decreciente clara, sino más bien fluctuaciones periódicas.
+    
+    **🔎 Posibles Causas:**
+    - Variaciones por estaciones del año (menos donaciones en invierno/verano debido a vacaciones o enfermedades).
+    - Campañas de donación que impulsan aumentos en ciertos meses.
+    - Eventos específicos como emergencias sanitarias o desastres naturales que pueden alterar la tendencia.
+    """)
+    
+    st.subheader("2️⃣ Distribución del Mes de Donación (Gráfico Inferior)")
+    st.markdown("""
+    **📊 Análisis:**
+    - Este gráfico muestra la cantidad de donaciones por mes en un período determinado.
+    - Hay una clara diferencia entre algunos meses con mayor actividad y otros con menor cantidad de donaciones.
+    - **Meses con más donaciones:** Parece haber picos en enero y agosto, con valores cercanos a 1,300 donaciones.
+    - **Meses con menos donaciones:** Se observan valores más bajos en diciembre (aproximadamente 719 donaciones).
+    - El gráfico de caja y bigotes en la parte superior indica una dispersión de los datos con posibles valores atípicos.
+    
+    **🔎 Posibles Causas:**
+    - Enero y agosto suelen ser meses de campañas intensivas de donación en muchas regiones.
+    - Diciembre podría tener menos donaciones debido a las festividades, vacaciones y menor disponibilidad de donantes.
+    - La variabilidad puede estar influenciada por días festivos, eventos de salud pública o estrategias de promoción.
+    
+    **📌 Conclusión**
+    - La tendencia de donaciones es fluctuante y no sigue un patrón completamente predecible.
+    - Se identifican meses con mayor y menor cantidad de donaciones, lo que podría ayudar a planificar estrategias para incentivar la donación en meses de baja participación.
+    """)
 
 

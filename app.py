@@ -85,6 +85,7 @@ para las necesidades hospitalarias.
         st.markdown(f"**📅 Hasta:** {max_donacion}")
         fig = mes_histograma(df)
         st.plotly_chart(fig)
+        distribucion_datos(df)
 
     # # Visualización de Edades
     elif eleccion == "Visualización de Edades":
