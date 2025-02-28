@@ -738,8 +738,11 @@ def gruposanguineo_conclusion():
     st.write("⚠️ **Los grupos con Rh negativo siguen siendo escasos**, lo que puede ser un desafío en casos de urgencia.")
 
 def lugar_conclusion()
-    st.write("""
-    - Las campañas son la principal fuente de donaciones voluntarias, lo que sugiere que son clave para la captación de nuevos donantes.
-    - Las sedes dependen más de donaciones por reposición, lo que podría significar que las personas donan principalmente cuando tienen un familiar o conocido que lo necesita.
-    - Los puestos fijos tienen poca participación, por lo que podrían requerir mayor promoción para aumentar la afluencia de donantes.""")
+    st.markdown("""
+### Conclusiones
+- 📢 **Las campañas** son la principal fuente de donaciones voluntarias, lo que las convierte en una estrategia clave para captar nuevos donantes.  
+- 🏥 **Las sedes** dependen en gran medida de donaciones por reposición, lo que sugiere que muchas personas donan solo cuando un familiar o conocido lo necesita.  
+- 📌 **Los puestos fijos** presentan una baja participación, lo que indica la necesidad de mayor promoción para aumentar la afluencia de donantes.  
+""")
+
 
