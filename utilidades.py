@@ -565,38 +565,24 @@ def edad_por_tipo_donante(df):
     st.plotly_chart(fig)
 
 def predecir_donaciones(df):
-    # Convertir fechas
     df["FECHA DONACION"] = pd.to_datetime(df["FECHA DONACION"])
-    
-    # Contar donaciones por mes
     donaciones_por_mes = df.resample("ME", on="FECHA DONACION").size().reset_index()
-    donaciones_por_mes.columns = ["ds", "y"]  # Prophet usa columnas 'ds' (fecha) y 'y' (valor)
-    
-    # Crear y entrenar el modelo
+    donaciones_por_mes.columns = ["ds", "y"]
+
     modelo = Prophet()
     modelo.fit(donaciones_por_mes)
-    
-    # Definir la fecha inicial para predicciones (enero 2025)
+
     fecha_inicio_prediccion = pd.to_datetime("2025-01-01")
-    
-    # Calcular cuántos meses predecir desde la última fecha del dataset hasta 2027 (3 años de predicción)
-    ultima_fecha = donaciones_por_mes["ds"].max()
-    meses_a_predecir = ((2027 - 2025) * 12) + 12  # Hasta diciembre de 2027
-    
-    # Generar fechas futuras a partir de enero 2025
+    meses_a_predecir = ((2027 - 2025) * 12) + 12
     futuro = modelo.make_future_dataframe(periods=meses_a_predecir, freq="ME")
-    futuro = futuro[futuro["ds"] >= fecha_inicio_prediccion]  # Filtrar solo desde enero 2025
-    
-    # Hacer predicciones
+    futuro = futuro[futuro["ds"] >= fecha_inicio_prediccion]
+
     predicciones = modelo.predict(futuro)
-    
-    # Gráfica con Plotly en Streamlit
+
+    # 📌 En vez de mostrar la gráfica aquí, solo la devolvemos
     fig = px.line(predicciones, x="ds", y="yhat", title="Predicción de Donaciones desde Enero 2025")
-    
-    # Mostrar la gráfica en Streamlit
-    st.plotly_chart(fig)
-    
-    return predicciones
+
+    return modelo, predicciones, fig
 
 def calcular_rmse(modelo, donaciones_por_mes):
     # Obtener predicciones en el rango del conjunto de entrenamiento
