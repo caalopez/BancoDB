@@ -40,6 +40,8 @@ def main():
     # # Inicio
     if eleccion == "Inicio":
         st.title("Inicio")
+
+        st.image("clinica.jpg", caption="Clínica CardioVid", use_column_width=True)
         st.markdown("""  
 ### Introducción  
 
