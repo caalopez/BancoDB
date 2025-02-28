@@ -667,7 +667,8 @@ def distribucion_datos():
     
     **📌 Conclusión**
     - La tendencia de donaciones es fluctuante y no sigue un patrón completamente predecible.
-    - Se identifican meses con mayor y menor cantidad de donaciones, lo que podría ayudar a planificar estrategias para incentivar la donación en meses de baja participación.
+    - Se identifican meses con mayor y menor cantidad de donaciones, lo que podría ayudar a planificar estrategias 
+    para incentivar la donación en meses de baja participación.
     """)
 
 
