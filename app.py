@@ -156,7 +156,11 @@ para las necesidades hospitalarias.
         st.title("Modelos Predictivos")
         predecir_donaciones(df)
         st.write("📊 **Modelo de Regresión Lineal**")
-        st.metric(label="📉 RMSE del modelo", value=f"{rmse:.2f}")
+        
+        rmse = calcular_rmse(predicciones, donaciones_por_mes)
 
+        # 📌 Mostrar RMSE en Streamlit
+        st.write(f"📉 RMSE del modelo: {rmse:.2f}")
+        
 if __name__ == "__main__":
   main()
