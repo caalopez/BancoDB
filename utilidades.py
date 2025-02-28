@@ -597,6 +597,21 @@ def predecir_donaciones(df):
     st.plotly_chart(fig)
     
     return predicciones
+
+def calcular_rmse(modelo, donaciones_por_mes):
+    # Generar predicciones en el mismo rango de datos históricos
+    futuro = modelo.make_future_dataframe(periods=0, freq="ME")  # Solo fechas del dataset original
+    predicciones = modelo.predict(futuro)
+    
+    # Fusionar datos reales con predicciones
+    predicciones_historicas = predicciones.merge(donaciones_por_mes, on="ds", how="inner")
+    
+    # Calcular RMSE
+    rmse = np.sqrt(mean_squared_error(predicciones_historicas["y"], predicciones_historicas["yhat"]))
+    
+    return rmse
+
+
 def explorar_datos(df):
     st.header("🔍 Exploración de Datos")
 
