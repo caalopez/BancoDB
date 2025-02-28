@@ -40,6 +40,23 @@ def main():
     # # Inicio
     if eleccion == "Inicio":
         st.title("Inicio")
+        st.markdown("""  
+### Introducción  
+
+La **Clínica CardioVid** es una institución de referencia en atención cardiovascular, comprometida con la excelencia en el cuidado de la salud a través de un enfoque 
+integral e innovador. Desde su fundación, ha trabajado para brindar servicios médicos de alta calidad, destacándose en la **prevención, diagnóstico y tratamiento** de 
+enfermedades cardiovasculares. Su misión es mejorar la calidad de vida de los pacientes mediante un **servicio humanizado**, basado en la **tecnología de 
+vanguardia** y el compromiso de un equipo altamente capacitado.  
+
+Dentro de sus múltiples servicios, el **banco de sangre** desempeña un papel fundamental en la atención de pacientes que requieren 
+**procedimientos quirúrgicos, tratamientos oncológicos y emergencias médicas**. La disponibilidad de **hemoderivados seguros y oportunos** 
+depende de un sistema eficiente de **recolección, procesamiento y distribución** de unidades sanguíneas, lo que resalta la importancia de la **donación voluntaria**.  
+
+Este proyecto tiene como objetivo **analizar los datos** relacionados con las **donaciones de sangre** en la Clínica CardioVid, 
+con el fin de **identificar tendencias, mejorar la gestión del banco de sangre y promover estrategias** para aumentar la participación de donantes. 
+A través del uso de herramientas de **análisis de datos**, se busca **optimizar la disponibilidad de sangre** y garantizar un abastecimiento adecuado 
+para las necesidades hospitalarias.  
+""")
 
     # # Exploración de Datos        
     elif eleccion == "Exploración de Datos":
