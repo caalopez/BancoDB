@@ -126,6 +126,7 @@ para las necesidades hospitalarias.
         with c2:
             grafico_donacion(df)
         edad_por_tipo_donacion(df)
+        donacion_analisis()
 
     # # Grupos Sanguíneos y Antígeno RH
     elif eleccion == "Grupos Sanguíneos y Antígeno RH":

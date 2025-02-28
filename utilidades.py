@@ -703,3 +703,29 @@ def mostrar_conclusiones():
     st.write("\n📌 **Analizar barreras médicas o culturales** que puedan afectar la participación de ciertos grupos de edad y género.")
     st.write("\n📌 **Fortalecer campañas para nuevos donantes**, especialmente en el grupo masculino, donde la diferencia es más marcada.")
 
+def donacion_analisis():
+    st.title("🩸 Análisis de Donación de Sangre")
+    
+    st.header("1. Frecuencia de Tipos de Donante")
+    st.subheader("Mayoría de donantes voluntarios")
+    st.write("La mayor parte de los donantes pertenecen a la categoría de voluntarios, lo que indica una alta concienciación sobre la importancia de la donación.")
+    
+    st.subheader("Pocos donantes dirigidos y autólogos")
+    st.write("Estas categorías tienen una presencia mínima, lo que puede deberse a que son casos específicos (como autólogos, que donan para sí mismos).")
+    
+    st.header("2. Frecuencia de Tipos de Donación")
+    st.subheader("Predominio de donación de sangre total")
+    st.write("La gran mayoría de las donaciones corresponden a sangre total, con más de 11,000 donantes en comparación con menos de 1,000 en aféresis.")
+    
+    st.subheader("Baja participación en aféresis")
+    st.write("La donación por aféresis es mucho menos frecuente, posiblemente por su duración o por requerimientos específicos.")
+    
+    st.header("3. Distribución de Edad según Tipo de Donación")
+    st.subheader("Mediana similar en ambos tipos de donación")
+    st.write("La edad mediana de los donantes es similar entre la donación de sangre total y la aféresis, rondando los 30-40 años.")
+    
+    st.subheader("Rango amplio de edades")
+    st.write("Ambos tipos de donación presentan donantes desde aproximadamente 20 hasta más de 60 años, lo que indica una participación diversa en términos de edad.")
+    
+    st.subheader("Distribución homogénea")
+    st.write("No hay diferencias marcadas entre ambos tipos de donación en cuanto a la edad de los donantes.")
