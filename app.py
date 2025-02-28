@@ -41,7 +41,15 @@ def main():
     if eleccion == "Inicio":
         st.title("Inicio")
 
-        st.image("clinica.jpg", caption="Clínica CardioVid", use_column_width=True)
+        # Ruta correcta si la imagen está en la carpeta "media"
+        image_path = os.path.join("media", "banco_sangre.jpg")
+
+        # Verificar si la imagen existe antes de mostrarla
+        if os.path.exists(image_path):
+            st.image(image_path, caption="Banco de Sangre de la Clínica CardioVid", use_container_width=True)
+        else:
+            st.error(f"⚠️ Imagen no encontrada en: {image_path}. Verifica la ruta.")
+        
         st.markdown("""  
 ### Introducción  
 
