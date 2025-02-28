@@ -14,7 +14,7 @@ from utilidades import *
 
 # Cargar datos
 #"/Users/carlos/Desktop/bancoDB/
-df = pd.read_csv("Data/bancoDB_limpieza_2.csv")
+df = pd.read_csv("/workspaces/bancoDB/Data/bancoDB_limpieza-2.csv")
 df = df.drop(columns=['Unnamed: 0'])
 
 st.markdown("<h1 style='text-align: center;'>📊Analisis de datos Banco de Sangre\n 🏥Clinica Cardio VID </h1>", unsafe_allow_html=True)
