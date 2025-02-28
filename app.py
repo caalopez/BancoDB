@@ -16,7 +16,7 @@ import os
 # Cargar datos
 #"/Users/carlos/Desktop/bancoDB/
 
-st.set_page_config(page_title="BancoDBn", page_icon=:magnet:")
+st.set_page_config(page_title="BancoDBn")
 ruta_csv = os.path.join("Data", "bancoDB_limpieza-2.csv")
 
 if os.path.exists(ruta_csv):
