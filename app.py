@@ -71,8 +71,8 @@ para las necesidades hospitalarias.
     # # Exploración de Datos        
     elif eleccion == "Exploración de Datos":
         st.title("Exploración de Datos")
-        st.dataframe(df)
-        st.write("##### Dimensión DF", df.shape)
+        #st.dataframe(df)
+        #st.write("##### Dimensión DF", df.shape)
         explorar_datos(df)
 
     # # Análisis de Variables Temporales

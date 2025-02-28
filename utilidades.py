@@ -614,6 +614,10 @@ def explorar_datos(df):
     - 🚻 **Género**: Masculino o Femenino.
     - ✅ **Tipo de diferido**: Si la donación fue aceptada o no.
     - 🩸 **Tipo de donante**: Voluntario, habitual, por reposición, etc.
+    - 🩸 ** Tipo de donacion**: Sangre total o Aferesis
+    - 🩸 ** Grupo Sanguineo**: A - B - O - AB
+    - 🩸 ** Antigeno RH-D**: Positivo o Negativo
+    - 🚩 ** Lugar de Donación**: Sede o Capaña
     """)
 
     # Mostrar dimensión del DataFrame
