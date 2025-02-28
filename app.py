@@ -150,6 +150,7 @@ para las necesidades hospitalarias.
         lugar_conclusion()
         grafico_grupo_sanguineo_por_lugar(df)
         edad_por_tipo_donante(df)
+        analisis_donantes()
 
     elif eleccion == "Modelos Predictivos":
         st.title("Modelos Predictivos")

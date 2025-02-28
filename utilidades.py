@@ -745,5 +745,17 @@ def lugar_conclusion():
      - 📌 **Los puestos fijos** presentan una baja participación, lo que indica la necesidad de mayor promoción para aumentar la afluencia de donantes.  
      """)
 
+def analisis_donantes():
+    st.markdown("""
+    ## 📊 Análisis de Donantes según Edad y Tipo de Donación
 
+    - 🧑‍🎓 **Donantes de primera vez** tienden a ser más jóvenes, lo que sugiere que las campañas pueden estar atrayendo a nuevas generaciones.  
+    - 🔄 **Donaciones por reposición y dirigidas** tienen una distribución de edad más amplia, lo que puede estar relacionado con la necesidad de donación para familiares de distintas edades.  
+    - 🏥 **Los donantes autólogos** son escasos en la muestra y parecen agruparse en un rango de edad específico.  
+    - 🔁 **La promoción de la donación voluntaria habitual** podría enfocarse en fidelizar a los donantes jóvenes para convertirlos en habituales.  
+
+    ### 🔍 **Conclusión**  
+    Se observa que la edad de los donantes varía según el tipo de donación, con una tendencia a que los donantes voluntarios y habituales sean de mediana edad, mientras que los donantes dirigidos presentan una mayor dispersión.  
+    Esto podría ayudar a orientar estrategias de captación y fidelización de donantes según sus perfiles.
+    """)
 
