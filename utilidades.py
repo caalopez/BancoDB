@@ -737,13 +737,13 @@ def gruposanguineo_conclusion():
     st.write("✅ **Las donaciones de aféresis siguen siendo minoritarias** respecto a sangre total.")
     st.write("⚠️ **Los grupos con Rh negativo siguen siendo escasos**, lo que puede ser un desafío en casos de urgencia.")
 
-def lugar_conclusion()
-    st.markdown("""
-    ### Conclusiones
-    - 📢 **Las campañas** son la principal fuente de donaciones voluntarias, lo que las convierte en una estrategia clave para captar nuevos donantes.  
-    - 🏥 **Las sedes** dependen en gran medida de donaciones por reposición, lo que sugiere que muchas personas donan solo cuando un familiar o conocido lo necesita.  
-    - 📌 **Los puestos fijos** presentan una baja participación, lo que indica la necesidad de mayor promoción para aumentar la afluencia de donantes.  
-    """)
+# def lugar_conclusion()
+#     st.markdown("""
+#     ### Conclusiones
+#     - 📢 **Las campañas** son la principal fuente de donaciones voluntarias, lo que las convierte en una estrategia clave para captar nuevos donantes.  
+#     - 🏥 **Las sedes** dependen en gran medida de donaciones por reposición, lo que sugiere que muchas personas donan solo cuando un familiar o conocido lo necesita.  
+#     - 📌 **Los puestos fijos** presentan una baja participación, lo que indica la necesidad de mayor promoción para aumentar la afluencia de donantes.  
+#     """)
 
 
 
