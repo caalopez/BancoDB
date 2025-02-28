@@ -565,7 +565,6 @@ def edad_por_tipo_donante(df):
     st.plotly_chart(fig)
 
 def predecir_donaciones(df):
-    def predecir_donaciones(df):
     # Convertir fechas
     df["FECHA DONACION"] = pd.to_datetime(df["FECHA DONACION"])
     
