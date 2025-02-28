@@ -168,7 +168,7 @@ para las necesidades hospitalarias.
         if not donaciones_por_mes.empty:
             rmse = calcular_rmse(modelo, donaciones_por_mes)
             st.write(f"📉 RMSE del modelo: {rmse:.2f}")
-         if not predicciones.empty:
+        if not predicciones.empty:
             st.plotly_chart(fig)
         else:
             st.warning("⚠️ No hay datos suficientes para generar una predicción.")
