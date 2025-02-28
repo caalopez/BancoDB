@@ -42,7 +42,7 @@ def main():
         st.title("Inicio")
 
         # Ruta correcta si la imagen está en la carpeta "media"
-        image_path = os.path.join("media", "banco_sangre.jpg")
+        image_path = os.path.join("media", "clinica.jpg")
 
         # Verificar si la imagen existe antes de mostrarla
         if os.path.exists(image_path):
