@@ -156,6 +156,46 @@ para las necesidades hospitalarias.
         st.title("Modelos Predictivos")
         predecir_donaciones(df)
         st.write("📊 **Modelo de Regresión Lineal**")
-        
+
+        st.title("Explicación del Modelo de Predicción de Donaciones")
+
+        st.header("Explicación del modelo de predicción")
+        st.write(
+            "El modelo se basa en datos históricos de donaciones para predecir tendencias futuras. "
+            "Se usa Prophet porque es un modelo diseñado para capturar tendencias y estacionalidades "
+            "en series temporales de manera automática."")
+
+        st.header("Pasos de implementación en el código")
+
+        st.subheader("Preprocesamiento de datos")
+        st.write("- Se convierte la columna de fechas (`FECHA DONACION`) al formato `datetime`.")
+        st.write("- Se agrupan las donaciones por mes. Prophet requiere que las columnas tengan nombres específicos:")
+        st.write("  - `ds` → Fecha")
+        st.write("  - `y` → Valor de la serie (cantidad de donaciones).")
+
+        st.subheader("Entrenamiento del modelo")
+        st.write("- Se crea una instancia de Prophet (`modelo = Prophet()`).")
+        st.write("- Se entrena (`modelo.fit(donaciones_por_mes)`) con los datos históricos.")
+
+        st.subheader("Generación de datos futuros")
+        st.write("- Se define la fecha de inicio de predicción en enero de 2025.")
+        st.write("- Se generan los meses a predecir hasta diciembre de 2027.")
+
+        st.subheader("Predicción")
+        st.write("- Se generan fechas futuras con `modelo.make_future_dataframe()`.")
+        st.write("- Se predicen valores usando `modelo.predict(futuro)`.")
+
+        st.subheader("Visualización en Streamlit")
+        st.write("- Se usa Plotly para graficar la tendencia (`px.line()` con `yhat`, la predicción).")
+        st.write("- Se muestra la gráfica en Streamlit con `st.plotly_chart(fig)`.")
+
+        st.header("Resultado final")
+        st.write(
+            "El modelo genera una proyección de las donaciones desde enero de 2025 hasta diciembre de 2027, "
+            "permitiendo analizar tendencias y posibles fluctuaciones en el futuro."
+
+
+
+
 if __name__ == "__main__":
   main()
