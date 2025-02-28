@@ -688,5 +688,4 @@ def analizar_edad():
     - Mayor participación de jóvenes: Esto puede deberse a campañas de donación dirigidas a estudiantes universitarios o jóvenes trabajadores.  
     - Menor participación en edades avanzadas: Posiblemente por restricciones médicas o menor interés en la donación de sangre en personas mayores.  
     """
-
-    """)
+    )
