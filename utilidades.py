@@ -598,6 +598,39 @@ def predecir_donaciones(df):
     
     return predicciones
 
+def explorar_datos(df):
+    st.header("🔍 Exploración de Datos")
+
+    # Mostrar una muestra de los primeros registros
+    st.write("### 📋 Ejemplo de Registros")
+    st.dataframe(df.head(10))  # Muestra las primeras 10 filas
+
+    # Descripción de las variables
+    st.write("### 📊 Variables en el Dataset")
+    st.markdown("""
+    - 📅 **Fecha de donación**: Día en que se realizó la donación.
+    - 📅 **Fecha de nacimiento**: Fecha de nacimiento del donante.
+    - 🔢 **Edad**: Edad del donante.
+    - 🚻 **Género**: Masculino o Femenino.
+    - ✅ **Tipo de diferido**: Si la donación fue aceptada o no.
+    - 🩸 **Tipo de donante**: Voluntario, habitual, por reposición, etc.
+    """)
+
+    # Mostrar dimensión del DataFrame
+    filas, columnas = df.shape
+    st.write("### 📏 Tamaño del Dataset")
+    st.markdown(f"📌 **{filas}** filas: Representa el número de registros de donantes.")
+    st.markdown(f"📌 **{columnas}** columnas: Representa la cantidad de variables recopiladas.")
+    st.success(f"Dimensión DF (**{filas}, {columnas}**)")
+
+    # Posibles análisis a realizar
+    st.write("### 📊 Posibles Análisis a Realizar")
+    st.markdown("""
+    - 📈 **Distribución por género**: ¿Hay más donantes hombres o mujeres?
+    - 🏥 **Frecuencia de donaciones**: ¿Cuántos donantes habituales vs. primera vez?
+    - ⏳ **Edad de los donantes**: ¿Cuál es el rango más común?
+    """)
+
 
 
 

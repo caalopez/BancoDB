@@ -73,6 +73,7 @@ para las necesidades hospitalarias.
         st.title("Exploración de Datos")
         st.dataframe(df)
         st.write("##### Dimensión DF", df.shape)
+        explorar_datos(df)
 
     # # Análisis de Variables Temporales
     elif eleccion == "Análisis de Variables Temporales":
