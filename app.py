@@ -1,11 +1,16 @@
 import pandas as pd
 import streamlit as st
+import utilidades as util
+from PIL import Image
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 from PIL import Image
+import pdfplumber
+import plotly.express as px
+from prophet import Prophet
 from utilidades import *
 
 # Cargar datos
