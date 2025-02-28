@@ -729,3 +729,13 @@ def donacion_analisis():
     
     st.subheader("Distribución homogénea")
     st.write("No hay diferencias marcadas entre ambos tipos de donación en cuanto a la edad de los donantes.")
+
+def gruposanguineo_conclusion():
+    st.header("Conclusión General")
+    st.write("✅ **Predominio de donantes femeninas** en la mayoría de los grupos sanguíneos.")
+    st.write("✅ **Grupos O+ y A+ son los más frecuentes** en ambos géneros.")
+    st.write("✅ **Las donaciones de aféresis siguen siendo minoritarias** respecto a sangre total.")
+    st.write("⚠️ **Los grupos con Rh negativo siguen siendo escasos**, lo que puede ser un desafío en casos de urgencia.")
+
+
+

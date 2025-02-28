@@ -140,6 +140,7 @@ para las necesidades hospitalarias.
             mostrar_grafico_grupo_rh(df)
         with c2:
             mostrar_grafico_grupo_rh_genero(df)
+        gruposanguineo_conclusion()
 
     # # Lugar de Donación
     elif eleccion == "Lugar de Donación":
