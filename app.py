@@ -104,7 +104,7 @@ para las necesidades hospitalarias.
         st.write(f"📅 **Menor edad:** {min_edad}")
         st.write(f"📅 **Mayor edad:** {max_edad}")
         detectar_outliers(df)
-        analizar_edad()
+        #analizar_edad()
 
     # # Visualización de Género
     elif eleccion  == "Visualización de Género":
