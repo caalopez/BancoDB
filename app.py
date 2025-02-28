@@ -105,6 +105,7 @@ def main():
     elif eleccion == "Modelos Predictivos":
         st.title("Modelos Predictivos")
         predecir_donaciones(df)
+        st.write("📊 **Modelo de Regresión Lineal**")
 
 if __name__ == "__main__":
   main()
