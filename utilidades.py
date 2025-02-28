@@ -12,7 +12,7 @@ import pdfplumber
 import plotly.express as px
 from prophet import Prophet
 import numpy as np
-from sklearn.metrics import mean_squared_error
+
 
 
 
