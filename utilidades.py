@@ -673,19 +673,18 @@ def distribucion2_datos():
 def analizar_edad():
     st.markdown(""""
     **📊 Análisis:**
-    **1. Forma de la Distribución**  
+    1. Forma de la Distribución**  
     - Distribución es asimétrica a la derecha, es decir, hay más donantes jóvenes y la frecuencia disminuye progresivamente con la edad.
     - Se observa un pico de frecuencia entre los 25 y 35 años, lo que indica que la mayoría de donantes se encuentran en este rango.
     - Disminución progresiva después de los 30 años: A medida que la edad aumenta, la frecuencia de donaciones se reduce gradualmente.  
 
-    **2. Medidas de Tendencia Central y Dispersión**  
+    2. Medidas de Tendencia Central y Dispersión**  
     - El rango intercuartílico (IQR) está entre 25 y 45 años, lo que sugiere que la mayoría de los donantes están en este intervalo.
     - Media y mediana probablemente menores a 35 años, dado que la mayor parte de los valores están concentrados entre 18 y 35 años.  
     - Amplio rango de edades: Se observan donaciones desde los 18 hasta los 60+ años.  
     - Posibles valores atípicos: No hay evidencias claras de valores extremos, pero los datos en los extremos podrían analizarse con un boxplot.  
 
-    **3. Interpretación Contextual**  
+    3. Interpretación Contextual**  
     - Mayor participación de jóvenes: Esto puede deberse a campañas de donación dirigidas a estudiantes universitarios o jóvenes trabajadores.  
     - Menor participación en edades avanzadas: Posiblemente por restricciones médicas o menor interés en la donación de sangre en personas mayores.  
-    """
-    )
+    """)
