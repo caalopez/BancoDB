@@ -157,6 +157,5 @@ para las necesidades hospitalarias.
         predecir_donaciones(df)
         st.write("📊 **Modelo de Regresión Lineal**")
         
-        
 if __name__ == "__main__":
   main()
