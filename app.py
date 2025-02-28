@@ -163,8 +163,8 @@ para las necesidades hospitalarias.
         st.write(
             "El modelo se basa en datos históricos de donaciones para predecir tendencias futuras. "
             "Se usa Prophet porque es un modelo diseñado para capturar tendencias y estacionalidades "
-            "en series temporales de manera automática.""
-            )
+            "en series temporales de manera automática."
+        )
 
         st.header("Pasos de implementación en el código")
 
@@ -194,6 +194,7 @@ para las necesidades hospitalarias.
         st.write(
             "El modelo genera una proyección de las donaciones desde enero de 2025 hasta diciembre de 2027, "
             "permitiendo analizar tendencias y posibles fluctuaciones en el futuro."
+        )
 
 
 
