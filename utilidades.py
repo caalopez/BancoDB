@@ -641,7 +641,7 @@ def distribucion_datos():
     **📊 Análisis:**
     - Se observa variabilidad significativa en el número de donaciones a lo largo del tiempo.
     - Existen picos de donaciones en algunos meses, seguidos de caídas notables.
-    - Hay una reducción drástica en ciertos periodos, lo que podría estar relacionado con factores estacionales, campañas de donación o eventos de salud pública.
+    - Hay una reducción drástica en ciertos periodos, lo que podría estar relacionado con factores campañas de donación o eventos de salud pública.
     - Sugiere que la variabilidad responde a patrones de comportamiento recurrentes.
     - Desde principios de 2022 hasta 2024, la cantidad de donaciones no muestra tendencia creciente o decreciente, sino más bien fluctuaciones periódicas.
     
@@ -747,7 +747,7 @@ def lugar_conclusion():
 
 def analisis_donantes():
     st.markdown("""
-    ## 📊 Análisis de Donantes según Edad y Tipo de Donación
+    #### 📊 Análisis de Donantes según Edad y Tipo de Donación
 
     - 🧑‍🎓 **Donantes de primera vez** tienden a ser más jóvenes, lo que sugiere que las campañas pueden estar atrayendo a nuevas generaciones.  
     - 🔄 **Donaciones por reposición y dirigidas** tienen una distribución de edad más amplia, lo que puede estar relacionado con la necesidad de donación para familiares de distintas edades.  
