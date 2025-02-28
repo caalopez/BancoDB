@@ -146,10 +146,10 @@ para las necesidades hospitalarias.
     elif eleccion == "Lugar de Donación":
         st.title("Lugar de Donación")
         lugar_donacion(df)
+        lugar_conclusion()
         donante_lugar_donacion(df)
         grafico_grupo_sanguineo_por_lugar(df)
         edad_por_tipo_donante(df)
-        lugar_conclusion()
 
     elif eleccion == "Modelos Predictivos":
         st.title("Modelos Predictivos")
