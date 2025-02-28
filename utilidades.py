@@ -689,3 +689,17 @@ def analizar_edad():
     - Mayor participación de jóvenes: Esto puede deberse a campañas de donación dirigidas a estudiantes universitarios o jóvenes trabajadores.  
     - Menor participación en edades avanzadas: Posiblemente por restricciones médicas o menor interés en la donación de sangre en personas mayores.  
     """)
+
+def mostrar_conclusiones():
+    st.header("Conclusiones Generales")
+    
+    st.write("\n✅ **Mayor participación femenina:** En todas las categorías de donantes analizadas, la proporción de mujeres es superior a la de hombres.")
+    st.write("\n✅ **Edad promedio levemente mayor en hombres:** Aunque las diferencias no son grandes, los hombres tienen una edad promedio de donación más alta.")
+    st.write("\n✅ **Mayor cantidad de mujeres en donación voluntaria:** Las mujeres están más presentes en la donación voluntaria y en la de primera vez, lo que puede ser resultado de campañas específicas o factores sociodemográficos.")
+    st.write("\n✅ **Distribución relativamente balanceada:** A pesar de que las mujeres donan más, la diferencia no es extrema, lo que indica una participación considerable de ambos géneros.")
+    
+    st.subheader("🔎 Recomendaciones para futuras estrategias de donación")
+    st.write("\n📌 **Incentivar la donación masculina** en campañas específicas, ya que su participación es menor.")
+    st.write("\n📌 **Analizar barreras médicas o culturales** que puedan afectar la participación de ciertos grupos de edad y género.")
+    st.write("\n📌 **Fortalecer campañas para nuevos donantes**, especialmente en el grupo masculino, donde la diferencia es más marcada.")
+

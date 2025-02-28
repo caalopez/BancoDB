@@ -113,6 +113,7 @@ para las necesidades hospitalarias.
         promedio_edad(df)
         genero_donante(df)
         genero_gruposanguineo(df)
+        mostrar_conclusiones()
         
 
     # # Diferidos, Donantes y Donaciones
