@@ -83,9 +83,10 @@ para las necesidades hospitalarias.
         min_donacion, max_donacion = calcular_rango_fechas(df)
         st.markdown(f"**📅 Desde:** {min_donacion}")  
         st.markdown(f"**📅 Hasta:** {max_donacion}")
+        distribucion_datos()
         fig = mes_histograma(df)
         st.plotly_chart(fig)
-        distribucion_datos()
+        distribucion2_datos()
 
     # # Visualización de Edades
     elif eleccion == "Visualización de Edades":

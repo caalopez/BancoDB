@@ -636,7 +636,7 @@ def explorar_datos(df):
     """)
 
 def distribucion_datos():
-    st.subheader("1️⃣ Tendencia de Donaciones en el Tiempo (Gráfico Superior)")
+    st.subheader("1️⃣ Tendencia de Donaciones en el Tiempo")
     st.markdown("""
     **📊 Análisis:**
     - Se observa una variabilidad significativa en el número de donaciones a lo largo del tiempo.
@@ -651,7 +651,8 @@ def distribucion_datos():
     - Eventos específicos como emergencias sanitarias o desastres naturales que pueden alterar la tendencia.
     """)
     
-    st.subheader("2️⃣ Distribución del Mes de Donación (Gráfico Inferior)")
+def distribucion2_datos():
+    st.subheader("2️⃣ Distribución del Mes de Donación ")
     st.markdown("""
     **📊 Análisis:**
     - Este gráfico muestra la cantidad de donaciones por mes en un período determinado.
